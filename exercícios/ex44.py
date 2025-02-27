@@ -1,0 +1,5 @@
+preco = float(input('Preço das compras: '))
+print('[ 1 ] á vista no dinheiro/cheque')
+print('[ 2 ] á vista no dinheiro/cheque')
+print('[ 3 ] á vista no dinheiro/cheque')
+print('[ 1 ] á vista no dinheiro/cheque')
