@@ -56,62 +56,109 @@ print(f'Letra E: {e2:.2f}')
 print(f'Letra F: {f2:.2f}')
 
 
-# Definindo as variáveis
+# Terceira Questao:
+print('Terceira questao: ')
+
+
+a_values = [3, 5, 2.5]
+b_values = [16, 64, 9]
+nome_values = ["MIRIAM", "PEDRO", "ANA"]
+profissao_values = ["ADVOGADO", "MEDICO", "PROFESSOR"]
 teste = False
 
-# Dados das linhas
-variaveis = [
-    {'a': 3, 'b': 16, 'nome': "MIRIAM", 'profissao': "ADVOGADO"},
-    {'a': 5, 'b': 64, 'nome': "PEDRO", 'profissao': "MEDICO"},
-    {'a': 2.5, 'b': 9, 'nome' : "ANA", 'profissao': "PROFESSOR"}
-]
-
 # Função para avaliar as expressões
-def avaliar_expressao(variaveis, teste):
-    resultados = []
+for i in range(3):
+    a = a_values[i]
+    b = b_values[i]
+    nome = nome_values[i]
+    profissao = profissao_values[i]
 
-    for var in variaveis:
-        a = var['a']
-        b = var['b']
-        nome = var['nome']
-        profissao = var['profissao']
+    # Expressão a
+    expr_a = ((a + 1 >= math.sqrt(b)) or (not "Ana" == nome))
 
-        # Expressão (a)
-        resultado_a = (a + 1 >= math.sqrt(b)) or (not "Ana" == nome)
+    # Expressão b
+    expr_b = ((a + 1 >= math.sqrt(b)) and (profissao == "MEDICO"))
 
-        # Expressão (b)
-        resultado_b = (a + 1 >= math.sqrt(b)) and (profissao == "MEDICO")
+    # Expressão c
+    expr_c = (not ("ANA" == nome)) or ((profissao == "Medico") and (a + 1 >= math.sqrt(b)))
 
-        # Expressão (c)
-        resultado_c = (not "ANA" == nome) or (profissao == "Medico" and a + 1 >= math.sqrt(b))
+    # Expressão d
+    expr_d = (not teste) and ((a + 1 >= math.pow(b, 1))) or (not (profissao == "MEDICO"))
 
-        # Expressão (d)
-        resultado_d = not teste and ((a + 1) >= math.pow(b, 1)) or not (profissao == "MEDICO")
+    # Expressão e
+    expr_e = not ((a + 1 >= math.sqrt(b)) and teste)
 
-        # Expressão (e)
-        resultado_e = not ((a + 1 >= math.sqrt(b)) and teste)
-
-        # Armazenando os resultados
-        resultados.append({
-            'linha': var,
-            'resultado_a': resultado_a,
-            'resultado_b': resultado_b,
-            'resultado_c': resultado_c,
-            'resultado_d': resultado_d,
-            'resultado_e': resultado_e
-        })
-
-    return resultados
-
-# Avaliando as expressões
-resultados = avaliar_expressao(variaveis, teste)
-
-# Exibindo os resultados
-for resultado in resultados:
-    print(f"Para a linha {resultado['linha']}:")
-    print(f"  (a) {resultado['resultado_a']}")
-    print(f"  (b) {resultado['resultado_b']}")
-    print(f"  (c) {resultado['resultado_c']}")
-    print(f"  (d) {resultado['resultado_d']}")
-    print(f"  (e) {resultado['resultado_e']}")
+    # Exibindo os resultados
+    print(f"Linha {i + 1}:")
+    print(f"a) {expr_a}")
+    print(f"b) {expr_b}")
+    print(f"c) {expr_c}")
+    print(f"d) {expr_d}")
+    print(f"e) {expr_e}")
+    print()
     print("-" * 40)
+
+
+   # Quarta questao:
+#x = 0.0
+
+#nome = ""
+
+#cor = ""
+
+#cod = False
+
+#teste = False
+
+#tudo = False
+
+
+#(v) teste = cod or ((x)*2 != soma)
+
+#(f) tudo = soma
+
+#(f) x = nome >= cor
+
+#(v) cod = cor = “verde”
+
+#(f) tudo = !teste or cod and (soma < x)
+
+#(v) nome = nome + cor
+
+
+
+    # Quinta questao:
+#Assinalar os comandos de atribuição inválidos, corrigindo-os quando possível:
+
+
+i=0 #Valido
+
+x, y, mult = 1, 2, 0 #Valido
+
+flag = False #Valido
+
+s = None #Valido
+
+nome = '' #Valido
+
+#sexo, opcao = 'f' /// #Invalido! // Forma certa:
+sexo = 'f'
+opcao = 'f'
+
+mult = x * y #Valido
+
+sexo = 'F' #Valido
+
+i = x + y * 100 #Valido
+
+i += 1 #Valido
+
+nome = "12345" #Valido
+
+opcao = "N" #Valido
+
+flag = True #Valido
+
+nome = "false" #Valido
+
+s = 4.5 #Valido
