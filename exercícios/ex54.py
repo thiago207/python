@@ -9,7 +9,7 @@ for c in range(1,8):
 
     idade = anoatual - nasc
 
-    if idade >=18:
+    if idade >=21:
         print('Maior de idade')
         cont = cont + 1
     else:
