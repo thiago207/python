@@ -12,6 +12,7 @@ while True:
     total = jogador + computador
     print('-' *40)
     print(f'Voce jogou {jogador} e o computador jogou {computador}. Total de {total}')
+    print(f'DEU PAR'if total % 2 ==0 else 'DEU IMPAR')
     print('-' *40)
     if valor == 'P':
         if total % 2 == 0:
