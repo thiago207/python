@@ -159,6 +159,4 @@ opcao = "N" #Valido
 
 flag = True #Valido
 
-nome = "false" #Valido
-
-s = 4.5 #Valido
+nome = "false" 
