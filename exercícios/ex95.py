@@ -1,11 +1,15 @@
-dados = {}
-time = []
-listagols = []
+dados = {} #DIOCIONARIO 
+time = [] # LISTA 
+listagols = [] # LISTA 
+ 
 while True:
     dados.clear()
+
     dados['nome'] = str(input('Nome do jogador: '))
     tot = int(input('Quantas partidas ele jogou? '))
+
     listagols.clear()
+
     for p in range(tot):
             listagols.append(int(input(f'     Quantos gols na partida {p+1}: ')))
     dados['gols'] = listagols[:]
@@ -41,5 +45,4 @@ while True:
           for i, g in enumerate(time[busca]['gols']):
                print(f'    No jogo {i+1} fez {g} gols.')
      print('-'*40)
-print('FIM')
-        
+print('FIM')  

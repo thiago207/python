@@ -5,4 +5,3 @@ if salario <=1250:
 else: 
     novo = salario + (salario * 10 / 100)
 print(f'Seu salario foi de R${salario}, para R${novo}. ')
-
