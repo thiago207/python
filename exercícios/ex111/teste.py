@@ -1,3 +1,4 @@
-import funcoes
+from utilidadescev import moeda
+
 p = float(input('Digite o preço: R$ '))
-funcoes.resumo(p, 80, 35)
+moeda.resumo(p, 80, 35)
