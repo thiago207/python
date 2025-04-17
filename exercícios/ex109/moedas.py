@@ -13,16 +13,16 @@ while True:
     
 
     if opcao == '1':
-        print(f'A metade do {p} seu valor é {funcoes.metade(p)}')
+        print(f'A metade do {funcoes.money(p)} seu valor é {(funcoes.metade(p,True))}')
 
     if opcao == '2':
-        print(f'O dobro do seu valor {p} é {funcoes.dobro(p)}')
+        print(f'O dobro do seu valor {funcoes.money(p)} é {(funcoes.dobro(p,True))}')
 
     if opcao == '3':
-        print(f'O aumento de 10% do seu valor {p} é {funcoes.aumentar10(p)}')
+        print(f'O aumento de 10% do seu valor {funcoes.money(p)} é {(funcoes.aumentar10(p, True))}')
 
     if opcao == '4':
-        print(f'A reduçao de 13% do seu valor {p} é {funcoes.diminuir13(p)}')
+        print(f'A reduçao de 13% do seu valor {funcoes.money(p)} é {funcoes.diminuir13(p,True)}')
     
     
     continuar= str(input('Quer continuar? [S/N]: ')).upper().strip()[0]
