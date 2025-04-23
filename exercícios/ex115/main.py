@@ -1,6 +1,14 @@
 from biblioteca import funcoes
-funcoes.linhas('115A')
+from arquivo import *
 from time import sleep
+
+
+arq = 'cursoemvideo.txt'
+if not arquivo(arq):
+    criar(arq)
+
+
+
 while True:
 
     resposta = funcoes.menu(['Ver pessoas cadrastradas' , 'Cadastrar nova pessoa' , 'Sair do progama'])
