@@ -23,5 +23,6 @@ while True:
             for k, v in enumerate(lista_compras):
                 print(f'{k + 1} - {v}')
 
+
     else:
         print('OPCAO INVALIDA')  
