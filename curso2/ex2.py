@@ -1,5 +1,5 @@
 
-'''try:
+try:
     numero = int(input('Digite um numero inteiro: '))
     
 except:
@@ -8,7 +8,7 @@ else:
     if numero % 2==0:
         print('PAR')
     else:
-        print('impar')'''
+        print('impar')
 
 
 
