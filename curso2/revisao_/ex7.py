@@ -11,11 +11,11 @@ def imparoupar(n=None):
     try:
         if n is not None:
             if n % 2 == 0:
-                return print(f'SEU VALOR {n} é par')
-            return print(f'SEU VALOR {n} é impar')
+                return f'SEU VALOR {n} é par'
+            return f'SEU VALOR {n} é impar'
         else:
             print('DIGITE ALGO VALIDO')
     except:
          print('erro')
 
-imparoupar(1.5)
+print(imparoupar(1.5))
