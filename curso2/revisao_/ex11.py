@@ -1,4 +1,4 @@
-perguntas = [
+'''perguntas = [
     {
         'Pergunta': 'Quanto é 2+2',
         'Opcoes': ['1','2','3','4'],
@@ -39,5 +39,39 @@ while True:
             print('Digite um valor valido')
         print()
     if acertou:
-        break
+        break'''
         
+perguntas = [
+    {
+        'Pergunta': 'Quanto é 2+2',
+        'Opcoes': ['1','2','3','4'],
+        'Resposta': '4',
+    }
+    ,
+    {
+        'Pergunta': 'Quanto é 5x5',
+        'Opcoes': ['10','15','25','20'],
+        'Resposta': '25',
+    }
+]
+valor = False
+while True:
+    for p in perguntas:
+        print(p['Pergunta'])
+        opcao = p['Opcoes']
+        for v,c in enumerate(opcao):
+            print(f'{v}) {c}')
+        tam = len(opcao)
+        try:
+            resposta = input('Opcao: ')
+            resposta = int(resposta)
+            if resposta >=0 and resposta < tam:
+                if opcao[resposta] == p['Resposta']:
+                    print('ACERTOU')
+                    valor = True
+                else:
+                    print('ERROU')
+            
+        except:
+            print(f'Digite um valor valido!!')
+    
