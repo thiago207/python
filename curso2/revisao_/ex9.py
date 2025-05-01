@@ -6,7 +6,9 @@ def criar_mut(multiplicador):
 
 d = criar_mut(2)
 t = criar_mut(3)
-q = criar_mut(4)
-print(d(2))
-print(t(2))
+q = criar_mut(4)  
+print(d(2))         
+print(q(2))           
 print(q(2))
+
+
