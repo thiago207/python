@@ -69,8 +69,8 @@ def encontrar(lista):
         if numero in numeros_checados:
             primeiro_duplicado = numero
             break
-
-        numeros_checados.add(numero)
+        else:
+            numeros_checados.add(numero)
     return primeiro_duplicado
     
 for n in lista_de_listas_de_inteiros:
