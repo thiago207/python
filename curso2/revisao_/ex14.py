@@ -1,6 +1,6 @@
 """
 Exercício
-Crie uma função que encontra o primeiro duplicado considerando o segundo
+Crie uma função que encontra o primei[1, 2ro duplicado considerando o segundo
 número como a duplicação. Retorne a duplicação considerada.
 Requisitos:
     A ordem do número duplicado é considerada a partir da segunda
@@ -48,7 +48,7 @@ for lista in lista_de_listas_de_inteiros:
     )'''
 
 lista_de_listas_de_inteiros = [
-    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    [1 , 3, 4, 5, 6, 7, 8, 9, 10],
     [9, 1, 8, 9, 9, 7, 2, 1, 6, 8],
     [1, 3, 2, 2, 8, 6, 5, 9, 6, 7],
     [3, 8, 2, 8, 6, 7, 7, 3, 1, 9],
