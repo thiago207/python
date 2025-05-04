@@ -41,6 +41,8 @@ while True:
     if acertou:
         break'''
         
+
+
 perguntas = [
     {
         'Pergunta': 'Quanto é 2+2',
@@ -54,24 +56,23 @@ perguntas = [
         'Resposta': '25',
     }
 ]
-valor = False
-while True:
-    for p in perguntas:
-        print(p['Pergunta'])
-        opcao = p['Opcoes']
-        for v,c in enumerate(opcao):
-            print(f'{v}) {c}')
-        tam = len(opcao)
-        try:
-            resposta = input('Opcao: ')
-            resposta = int(resposta)
-            if resposta >=0 and resposta < tam:
-                if opcao[resposta] == p['Resposta']:
-                    print('ACERTOU')
-                    valor = True
-                else:
-                    print('ERROU')
-            
-        except:
-            print(f'Digite um valor valido!!')
+cont_acertos = 0
+
+for p in perguntas:
+    print(p['Pergunta'])
+    tam_pgt = p['Pergunta']
+    opcao = p['Opcoes']
+    tam = len(opcao)
+    for c,o in enumerate(opcao):
+        print(f'{c}) {o}')
+    print()
+    try:
+        resposta = int(input('Sua resposta: '))
+        if resposta >= 0 and resposta < tam:
+            if opcao[resposta] == p['Resposta']:
+                print('ACERTOU!')
+            else:
+                print('ERROU')
+    except:
+        print('Digite um valor valido')
     
