@@ -3,5 +3,8 @@ pessoas = {
     'sobrenome': 'Felipe',
 
 }
-for k,v in pessoas.items():
-    print(f'{k} - {v}')
+def mostar(args):
+    for k,v in args.items():
+        print(f'{k} - {v}')
+    
+mostar(pessoas)
