@@ -104,6 +104,7 @@ print(f"A segunda candidata mais alta tem {segunda_mais_alta:.2f} metros.")
 '''
 
 # 7 questao >
+'''
 ler = 0
 
 cont_a = 0
@@ -175,3 +176,189 @@ for nome in homens_peso_acima_90_idade_50:
 print('Nome das mulheres menores de idade: ')
 for nome in mulheres_menor_idade:
     print(' -', nome)
+'''
+
+#8 questao> 
+'''
+intervalo1 = 0  # [0, 25]
+intervalo2 = 0  # (25, 50]
+intervalo3 = 0  # (50, 75]
+intervalo4 = 0  # (75, 100]
+
+print("Digite os valores (número negativo para encerrar):")
+
+while True:
+    valor = float(input("Valor: "))
+
+    if valor < 0:
+        break  
+
+    if 0 <= valor <= 25:
+        intervalo1 += 1
+    elif 25 < valor <= 50:
+        intervalo2 += 1
+    elif 50 < valor <= 75:
+        intervalo3 += 1
+    elif 75 < valor <= 100:
+        intervalo4 += 1
+    else:
+        print("Valor fora do intervalo [0,100] — ignorado.")
+
+
+print("\nContagem por intervalos:")
+print(f"[0,25]     : {intervalo1}")
+print(f"(25,50]    : {intervalo2}")
+print(f"(50,75]    : {intervalo3}")
+print(f"(75,100]   : {intervalo4}")
+'''
+
+#9 questao> 
+'''
+a = 1
+b = 1
+soma = a + b  
+
+print("100 primeiros termos da série de Fibonacci:")
+print(a)
+print(b)
+
+
+for i in range(3, 101):
+    termo = a + b
+    print(termo)
+    soma += termo
+    a = b
+    b = termo
+
+
+print(f"\nSoma dos 100 primeiros termos: {soma}")
+'''
+
+#10 questao>
+'''
+nascimentos = int(input("Digite o número total de crianças nascidas no período: "))
+
+total_mortes = 0
+mortes_femininas = 0
+mortes_ate_24_meses = 0
+
+while True:
+    sexo = input("Digite o sexo da criança morta (masculino/feminino) ou 'vazio' para encerrar: ").strip().lower()
+    
+    if sexo == "vazio":
+        break
+
+    meses = int(input("Digite o número de meses de vida da criança: "))
+    total_mortes += 1
+
+    if sexo == "feminino":
+        mortes_femininas += 1
+
+    if meses <= 24:
+        mortes_ate_24_meses += 1
+
+
+if nascimentos > 0:
+    perc_mortalidade_geral = (total_mortes / nascimentos) * 100
+    perc_mortalidade_feminina = (mortes_femininas / nascimentos) * 100
+    perc_mortes_ate_24 = (mortes_ate_24_meses / nascimentos) * 100
+
+    print(f"\nRelatório da mortalidade infantil:")
+    print(f"Percentual de crianças mortas: {perc_mortalidade_geral:.2f}%")
+    print(f"Percentual de meninas mortas: {perc_mortalidade_feminina:.2f}%")
+    print(f"Percentual de crianças que viveram 24 meses ou menos: {perc_mortes_ate_24:.2f}%")
+else:
+    print("Número de nascimentos deve ser maior que zero.")
+'''
+
+#11 questao >
+# Inicialização das variáveis de audiência
+aud_cultura = 0
+aud_sbt = 0
+aud_globo = 0
+aud_record = 0
+aud_mtv = 0
+total_pessoas = 0
+
+print("Pesquisa de audiência de TV")
+print("Digite o canal assistido ou 'fim' para encerrar.")
+print("Canais disponíveis: Cultura, SBT, Globo, Record, MTV")
+
+while True:
+    canal = input("\nCanal: ").strip().lower()
+    
+    if canal == "fim":
+        break
+
+    pessoas = int(input("Número de pessoas assistindo: "))
+    
+    if canal == "cultura":
+        aud_cultura += pessoas
+    elif canal == "sbt":
+        aud_sbt += pessoas
+    elif canal == "globo":
+        aud_globo += pessoas
+    elif canal == "record":
+        aud_record += pessoas
+    elif canal == "mtv":
+        aud_mtv += pessoas
+    else:
+        print("Canal inválido. Dados ignorados.")
+        continue  # não soma ao total
+
+    total_pessoas += pessoas
+
+
+if total_pessoas > 0:
+    perc_cultura = (aud_cultura / total_pessoas) * 100
+    perc_sbt = (aud_sbt / total_pessoas) * 100
+    perc_globo = (aud_globo / total_pessoas) * 100
+    perc_record = (aud_record / total_pessoas) * 100
+    perc_mtv = (aud_mtv / total_pessoas) * 100
+
+    print("\nPercentual de audiência por canal:")
+    print(f"Cultura: {perc_cultura:.2f}%")
+    print(f"SBT:     {perc_sbt:.2f}%")
+    print(f"Globo:   {perc_globo:.2f}%")
+    print(f"Record:  {perc_record:.2f}%")
+    print(f"MTV:     {perc_mtv:.2f}%")
+
+    
+    maior_aud = aud_cultura
+    menor_aud = aud_cultura
+    canal_maior = "Cultura"
+    canal_menor = "Cultura"
+
+    if aud_sbt > maior_aud:
+        maior_aud = aud_sbt
+        canal_maior = "SBT"
+    elif aud_sbt < menor_aud:
+        menor_aud = aud_sbt
+        canal_menor = "SBT"
+
+    if aud_globo > maior_aud:
+        maior_aud = aud_globo
+        canal_maior = "Globo"
+    elif aud_globo < menor_aud:
+        menor_aud = aud_globo
+        canal_menor = "Globo"
+
+    if aud_record > maior_aud:
+        maior_aud = aud_record
+        canal_maior = "Record"
+    elif aud_record < menor_aud:
+        menor_aud = aud_record
+        canal_menor = "Record"
+
+    if aud_mtv > maior_aud:
+        maior_aud = aud_mtv
+        canal_maior = "MTV"
+    elif aud_mtv < menor_aud:
+        menor_aud = aud_mtv
+        canal_menor = "MTV"
+
+    print(f"\nMaior audiência: {canal_maior} ({maior_aud} pessoas)")
+    print(f"Menor audiência: {canal_menor} ({menor_aud} pessoas)")
+
+else:
+    print("\nNenhuma casa registrada com TV ligada.")
