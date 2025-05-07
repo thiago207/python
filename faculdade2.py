@@ -1,5 +1,5 @@
 # 1 questao>
-'''soma_imposto = 0
+soma_imposto = 0
 
 for imposto in range (501):
     valor = float(input('Digite seu valor base: '))
@@ -27,16 +27,16 @@ for imposto in range (501):
 print()
 
 
-print(f'O total de imposto que a empresa deve pagar é de: R$: {soma_imposto:.2f}')'''
+print(f'O total de imposto que a empresa deve pagar é de: R$: {soma_imposto:.2f}')
 
 # 2 questao>
 
-'''for c in range(50, 251):
+for c in range(50, 251):
     print(f'{c} o quadrado desse numero é {c**2}')
-    print()'''
+    print()
 
 # 3 questao> 
-'''cont = 0
+cont = 0
 soma_salarios = 0
 while True:
     salario = float(input('Qual valor do salario?[-1 para encerar o progama] '))
@@ -48,10 +48,10 @@ while True:
         break
 
 media_salario = soma_salarios / cont
-print(f'A media desses salarios foi de {media_salario}')'''
+print(f'A media desses salarios foi de {media_salario}')
 
-# 4 questa>
-'''cont = 0
+# 4 questao>
+cont = 0
 soma_medias_alunos = 0
 
 n = int(input('Quantos alunos tem nessa turma? '))
@@ -67,10 +67,10 @@ else:
     print('VALOR INVALIDO.')
     
 media_notas = soma_medias_alunos / n
-print(f'A media dos alunos foi: {media_notas}')'''
+print(f'A media dos alunos foi: {media_notas}')
 
 # 5 questao> 
-'''numero = int(input('Qual numero deseja saber o fatorial? '))
+numero = int(input('Qual numero deseja saber o fatorial? '))
 fatorial = 1
 cont=0
 sequencia = 0
@@ -81,11 +81,11 @@ if numero > 0:
 else:
     print(f'DIGITE UM VALOR VALIDO')
 
-print(f'SEU NUMERO {numero} fatorado é igual a {fatorial}')'''
+print(f'SEU NUMERO {numero} fatorado é igual a {fatorial}')
 
 # 6 questao >
 
-'''
+
 mais_alta = 0
 segunda_mais_alta = 0
 
@@ -101,10 +101,10 @@ for i in range(1, 201):
 
 print(f"A candidata mais alta tem {mais_alta:.2f} metros.")
 print(f"A segunda candidata mais alta tem {segunda_mais_alta:.2f} metros.")
-'''
+
 
 # 7 questao >
-'''
+
 ler = 0
 
 cont_a = 0
@@ -122,8 +122,8 @@ mulher_mais_gorda = 0
 nome_mulher_mais_gorda = ''
 
 
-homens_peso_acima_90_idade_50 = []
-mulheres_menor_idade = []
+homens_peso_acima_90_idade_50 = ''
+mulheres_menor_idade = ''
 
 while ler != 2:
     ler += 1
@@ -152,11 +152,11 @@ while ler != 2:
 
     if sexo == 'M':
         if peso > 90 and idade > 50:
-            homens_peso_acima_90_idade_50.append(nome)
+            homens_peso_acima_90_idade_50 = nome
 
     if sexo == 'F':
         if idade < 18:
-            mulheres_menor_idade.append(nome)
+            mulheres_menor_idade = nome
 
 
 media_altura_homens = soma_altura / cont_a
@@ -169,17 +169,15 @@ print(f'A media dos pesos das mulheres foi de: {media_pesos_mulheres:.1f}')
 print()
 print(f'O homem mais alto foi {nome_homem_mais_alto} com {homem_mais_alto}')
 print()
-print('Nome dos homens com peso maior do que 90 e idade maior do que 50: ')
-for nome in homens_peso_acima_90_idade_50:
-    print(' -', nome)
+print('Nome dos homens com peso maior do que 90 e idade maior do que 50: {homens_peso_acima_90_idade_50}')
 
-print('Nome das mulheres menores de idade: ')
-for nome in mulheres_menor_idade:
-    print(' -', nome)
-'''
+
+print('Nome das mulheres menores de idade: {mulheres_menor_idade}')
+
+
 
 #8 questao> 
-'''
+
 intervalo1 = 0  # [0, 25]
 intervalo2 = 0  # (25, 50]
 intervalo3 = 0  # (50, 75]
@@ -210,10 +208,10 @@ print(f"[0,25]     : {intervalo1}")
 print(f"(25,50]    : {intervalo2}")
 print(f"(50,75]    : {intervalo3}")
 print(f"(75,100]   : {intervalo4}")
-'''
+
 
 #9 questao> 
-'''
+
 a = 1
 b = 1
 soma = a + b  
@@ -232,10 +230,10 @@ for i in range(3, 101):
 
 
 print(f"\nSoma dos 100 primeiros termos: {soma}")
-'''
+
 
 #10 questao>
-'''
+
 nascimentos = int(input("Digite o número total de crianças nascidas no período: "))
 
 total_mortes = 0
@@ -269,10 +267,9 @@ if nascimentos > 0:
     print(f"Percentual de crianças que viveram 24 meses ou menos: {perc_mortes_ate_24:.2f}%")
 else:
     print("Número de nascimentos deve ser maior que zero.")
-'''
+
 
 #11 questao >
-# Inicialização das variáveis de audiência
 aud_cultura = 0
 aud_sbt = 0
 aud_globo = 0
