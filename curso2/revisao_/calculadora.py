@@ -55,30 +55,27 @@ def menu():
             n2 = float(input("Digite o segundo número: "))
             if opcao == 1:
                 resultado = n1 + n2
-                
                 calculo = f'{n1} + {n2} = {resultado}'
                 historico.append(calculo)
                 print(calculo)
 
             elif opcao == 2:
                 resultado =  n1 - n2
-                
                 calculo = f'{n1} - {n2} = {resultado}'
                 historico.append(calculo)
                 print(calculo)
 
             elif opcao == 3:
                 resultado = n1 * n2
-                
                 calculo = f'{n1} x {n2} = {resultado}'
                 historico.append(calculo)
                 print(calculo)
 
             elif opcao == 4:
-                
                 if n2 == 0:
                     print(f'ERRO DIVISAO POR (0)')
                     continue
+
                 resultado = n1 / n2
                 calculo = f'{n1} / {n2} = {resultado}'
                 historico.append(calculo)
@@ -90,9 +87,6 @@ def menu():
                 calculo = f'{n1} ** {n2} = {resultado}'
                 historico.append(calculo)
                 print(calculo)
-
-            
-        
 
         except ValueError:
             print('DIGITE VALORES VALIDOS.')
