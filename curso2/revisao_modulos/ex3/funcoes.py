@@ -9,9 +9,8 @@ def aumentar_valores(lista):
     novos_produtos = copy.deepcopy(lista)
     for e in novos_produtos:
         porcentagem = e['preco'] * 10 / 100
-        e['preco'] = porcentagem + e['preco']
-    for p in novos_produtos:
-        print(p)
+        e['preco'] = round(porcentagem + e['preco'], 2)
+    return novos_produtos
 
 def ordenar_produtos_por_nome_decrescente(lista_produtos):
     def obter_nome(produto):
@@ -32,3 +31,8 @@ def ordenar_produtos_por_nome_crescente(lista_produtos):
     produtos_copiados.sort(key=obter_nome)
     
     return produtos_copiados
+
+def produtos_por_preco(lista):
+    nova_lista = copy.deepcopy(lista)
+    nova_lista.sorted(key=lambda e: e['preco'])
+    return nova_lista
