@@ -41,7 +41,7 @@ def criar_funcao(func):
     return interna
 
 
-
+@criar_funcao
 def inverte(string):
     return string[::-1]
 
@@ -52,6 +52,6 @@ def e_string(param):
     return param
         
     
-inverte = criar_funcao(inverte)
+
 invertida = inverte(123)
 print(invertida)
