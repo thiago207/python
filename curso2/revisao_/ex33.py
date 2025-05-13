@@ -43,5 +43,7 @@ alunos_agrupados = sorted(alunos,key=ordena)
 grupos = groupby(alunos_agrupados, key=ordena)
 for grupo,alunos in grupos:
     print(grupo)
+    
     for aluno in alunos:
         print(aluno)
+
