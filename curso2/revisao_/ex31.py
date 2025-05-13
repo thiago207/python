@@ -19,3 +19,5 @@ print()
 print('range')
 for i in r1:
     print(i)
+
+
