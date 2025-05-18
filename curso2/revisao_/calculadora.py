@@ -82,7 +82,7 @@ def menu():
                 print(calculo)
 
             elif opcao == 5:
-
+                
                 resultado = n1 ** n2
                 calculo = f'{n1} ** {n2} = {resultado}'
                 historico.append(calculo)
