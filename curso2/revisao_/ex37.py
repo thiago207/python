@@ -18,34 +18,35 @@
 # Vamos falar mais sobre o módulo json, mas:
 # json.dump = Gera um arquivo json
 # json.load
-
+import os
 caminho_arquivo = 'aula-ex-37.txt'
 
 #arquivo = open(caminho_arquivo, 'w+')
 #arquivo.close()
 
-#with open(caminho_arquivo, 'w+') as arquivo:
-#    arquivo.write('Linha 1\n')
-#    arquivo.write('Linha 2\n')
-#    arquivo.write('linha 3\n')
-#    arquivo.write('linha 4\n')
-#    arquivo.writelines(
-#        ('oi\n','ola')
-#        )
-#    arquivo.seek(0,0)
-#    print('lendo com read')
-#    print(arquivo.read())
-#   print()
+with open(caminho_arquivo, 'w+') as arquivo:
+    arquivo.write('Linha 1\n')
+    arquivo.write('Linha 2\n')
+    arquivo.write('linha 3\n')
+    arquivo.write('linha 4\n')
+    arquivo.writelines(
+        ('oi\n','ola')
+        )
+    arquivo.seek(0,0)
+    print('lendo com read')
+    print(arquivo.read())
+    print()
 
-#arquivo.seek(0,0)
-#print('lendo com readline')
-# print(arquivo.readline())
-#  print()
-#
-#    arquivo.seek(0,0)
-#  print('READLINES')
-#  for linha in arquivo.readlines():
-#     print(linha.strip())
+    arquivo.seek(0,0)
+    print('lendo com readline')
+    print(arquivo.readline())
+    print()
+
+    arquivo.seek(0,0)
+    print('READLINES')
+    for linha in arquivo.readlines():
+        print(linha.strip())
+print()
 with open(caminho_arquivo, 'w+', encoding='utf8') as arquivo:
     arquivo.write('Atençao')
     arquivo.write('Linha 1\n')
@@ -57,3 +58,5 @@ with open(caminho_arquivo, 'w+', encoding='utf8') as arquivo:
         )
     arquivo.seek(0,0)
     print(arquivo.read())
+#os.rename(caminho_arquivo, 'novo-aqv.txt')
+#os.remove(caminho_arquivo)
