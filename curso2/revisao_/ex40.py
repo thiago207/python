@@ -7,7 +7,8 @@
 # desfazer = [] -> Refazer ['caminhar', 'fazer café']
 # refazer = todo ['fazer café']
 # refazer = todo ['fazer café', 'caminhar']
-
+import os
+          
 def listar(tarefas):
     if tarefas:
         print('\nTarefas:')
@@ -50,6 +51,9 @@ while True:
             
     elif comando == 'REFAZER':
         refazer(lista_main, tarefas_refazer)
+
+    elif comando == 'CLEAR':
+        os.system('clear')
 
     else:
          lista_main.append(opc) 
