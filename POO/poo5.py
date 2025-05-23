@@ -31,6 +31,7 @@ c2 = Camera('Sony')
 
 c1.filmar()  
 c1.filmar() 
+c1.fotagrafar()
 c1.para_de_filmar()
 c1.fotagrafar()
 
