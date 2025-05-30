@@ -9,40 +9,50 @@
 # Exiba o nome do carro, motor e fabricante na tela
 
 class Carro:
-    def __init__(self, nome):
+    def __init__(self, nome, motor=None, fabricante=None):
         self.nome = nome
-        self._motor = None
-        self._fabricante = None
+        self._motor = fabricante
+        self._fabricante = motor
 
     @property
     def motor(self):
         return self._motor
     @motor.setter
-    def motor(self, valor):
+    def motor(self,valor):
         self._motor = valor
 
     @property
     def fabricante(self):
         return self._fabricante
     @fabricante.setter
-    def fabricante(self, valor):
-        self._fabricante = valor 
+    def fabricante(self,valor):
+        self._fabricante = valor
+    
 
     def mostrar_dados(self):
         print(f'{self.nome} - {self._motor} - {self._fabricante}')
 class Motor:
     def __init__(self,nome):
         self.nome= nome
-    
+    def __str__(self):
+        return self.nome
+
 class Fabricante:
     def __init__(self, nome):
         self.nome= nome
+    def __str__(self):
+        return self.nome
        
-fusca = Carro('Fusca')
+
 volkswagen = Fabricante('Volkswagen')
 motor_1_0 = Motor('1.0')
-fusca.fabricante = volkswagen
-fusca.motor = motor_1_0
-print(fusca.nome, fusca.fabricante.nome, fusca.motor.nome)
+fusca = Carro('Fusca', motor_1_0, volkswagen)
+china = Fabricante('CHINA')
+motor2 = Motor('v8')
+bmw =  Carro('bmw')
+bmw.fabricante = china
+bmw.motor = motor2
+bmw.mostrar_dados()
+fusca.mostrar_dados()
 
 
