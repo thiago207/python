@@ -16,7 +16,10 @@
 
 class A:
     atributo_a = 'valorA'
-    
+
+    def __init__(self, nome):
+        self.nome = nome
+
     def metodo(self):
         print('A')
 
@@ -24,15 +27,26 @@ class A:
 class B(A):
     atributo_b = 'valorB'
 
+    def __init__(self, nome, valor):
+        super().__init__(nome)
+        self.valor = valor
+
     def metodo(self):
         print('B')
 
 class C(B):
     atributo_c = 'valorC'
-    
+
     def metodo(self):
+        #super().metodo() # PEGA O METODO DE B
+        #super(B, self).metodo() # PEGA O METODO DE A
+        #super(A, self).metodo() # PEGA O METODO DE OBJ
         print('C')
 
 
-c = C()
-print(c.atributo_a, c.atributo_b, c.atributo_c)
+c = C('Thiago','Futuro Estagiario')
+
+#print(c.atributo_a, c.atributo_b, c.atributo_c)
+
+print(c.nome, c.valor)
+
