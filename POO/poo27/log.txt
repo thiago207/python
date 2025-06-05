@@ -3,3 +3,5 @@ Success: Galaxy S esta ligado, Smartphone
 Error: iPhone esta desligado, Smartphone
 Success: Galaxy S esta ligado, Smartphone
 Error: iPhone esta desligado, Smartphone
+Error: qualquer coisa, LogFileMixin
+Success: QUE LEGAL, LogFileMixin
