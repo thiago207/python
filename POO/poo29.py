@@ -18,7 +18,8 @@ class AbstractFoo(ABC):
 
     @name.setter
     @abstractmethod
-    def name(self, name): ...
+    def name(self, name): 
+        ...
 
 
 class Foo(AbstractFoo):
@@ -33,3 +34,25 @@ class Foo(AbstractFoo):
 
 foo = Foo('Bar')
 print(foo.name)
+
+
+
+class Pagamento(ABC):
+    @abstractmethod
+    def pagar(self):
+         ...
+    @abstractmethod
+    def receber(self):
+         ...
+class PagamentoPix(Pagamento):
+    def pagar(self, valor):
+        print(f'Pago no valor de {valor}')
+    
+    def receber(self, valor):
+        print(f'Recebido no valor de {valor}')
+    
+p1 = PagamentoPix()
+p1.pagar(11)
+p1.receber(1002)
+    
+

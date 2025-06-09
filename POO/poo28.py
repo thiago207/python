@@ -7,11 +7,10 @@ class Funcionario():
         self.nome = nome
         self._trabalhando = False
     def trabalhar(self):
-        
         if not self._trabalhando:
             self._trabalhando = True
-            print(f'{self.nome} esta trabalhando')
-            
+            print(f'{self.nome} esta trabalhando')  
+
         else:
             print(f'{self.nome} ja esta trabalhando')
         return
