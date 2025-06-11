@@ -189,7 +189,7 @@ class UsuarioEmail(Usuario):
             return
         print(f'SENHA INVALIDA INVALIDA')
     
-u = UsuarioEmail()
+u = UsuarioEmail('a')
 u.login = 'vouserfoda.@gmail.com'
 u.senha = '123456'
 print(u.login, u.senha)
