@@ -11,7 +11,9 @@ def adiciona_repr(class_):
 
 def meu_planeta(metodo):
     def interno(self, *agrs, **kwargs):
-        metodo = self.falar_nome()
+        resultado = metodo(self, *agrs, **kwargs)
+        if 'Terra' in resultado:
+            return 'Voce enta em casa'
         return resultado
     return interno
 
