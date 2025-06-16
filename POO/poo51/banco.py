@@ -7,6 +7,8 @@ class Banco:
         self._clientes = []
         self._contas = []
         self._agencias = agencias if agencias else []
+
+
     def adicionar_cliente(self, cliente):
         self._clientes.append(cliente)
 
@@ -37,14 +39,18 @@ class Banco:
             conta.sacar(valor)
         else:
             print('Falha na autenticação. Saque não autorizado.')
+    def __repr__(self):
+        class_name = type(self).__name__
+        attrs = f'({self._agencias!r}, {self._clientes!r}, {self._contas!r})'
+        return f'{class_name}{attrs}'
     
+if __name__ == '__main__':
+    conta_p1 = ContaCorrente('ITAU', 1234, 1000)
+    cliente1 = Cliente('Thiago', 18, conta_p1)
 
-conta_p1 = ContaCorrente('ITAU', 1234, 1000)
-cliente1 = Cliente('Thiago', 18, conta_p1)
+    # Criando o banco
+    banco = Banco('Meu Banco', agencias=['ITAU', 'NUBANK'])
+    banco.adicionar_cliente(cliente1)
+    banco.adicionar_conta(conta_p1)
 
-# Criando o banco
-banco = Banco('Meu Banco', agencias=['ITAU', 'NUBANK'])
-banco.adicionar_cliente(cliente1)
-banco.adicionar_conta(conta_p1)
-
-banco.sacar(cliente1, conta_p1, 300)
+    banco.sacar(cliente1, conta_p1, 300)
