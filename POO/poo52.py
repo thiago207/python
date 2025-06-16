@@ -16,6 +16,7 @@ class Pessoa:
     nome: str
     idade: int
 
+    
 if __name__ == '__main__':
     p1 = Pessoa('thiago', 12)
     print(p1)
