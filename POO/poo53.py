@@ -6,8 +6,9 @@ from dataclasses import dataclass, field
 class Pessoa:
     nome: str
     sobrenome: str
-    _idade: int = field(default=0, repr=False)
-
+    
+    def __post_init__(self):  #DEPOIS DE INICIAR O PROGAMA CRIAS ESSE ATRIBUTO SEM PEDIR ELE OBRIGATORIAMENTE
+        self.idade = None
     @property
     def idade(self):
         return self._idade
