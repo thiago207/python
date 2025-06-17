@@ -7,7 +7,7 @@ class Pessoa:
     nome: str
     sobrenome: str
     
-    def __post_init__(self):  #DEPOIS DE INICIAR O PROGAMA CRIAS ESSE ATRIBUTO SEM PEDIR ELE OBRIGATORIAMENTE
+    def __post_init__(self):     #DEPOIS DE INICIAR O PROGAMA CRIAS ESSE ATRIBUTO SEM PEDIR ELE OBRIGATORIAMENTE
         self.idade = None
     @property
     def idade(self):
