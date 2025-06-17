@@ -1,48 +1,67 @@
 # python
 🐍 Bem-vindo(a) ao Repositório de Estudos em Python de Thiago Felipe!
-📌 Repositório: thiago207/python](https://github.com/thiago207/python
+📌 Repositório: thiago207/python
 
-Este repositório documenta minha jornada de aprendizado em Python, indo além dos conceitos básicos e explorando conteúdos intermediários e avançados com foco em código limpo e boas práticas.
+Este repositório registra minha jornada de aprendizado em Python, com foco não apenas nos fundamentos, mas também em conteúdos intermediários e avançados, sempre priorizando código limpo, boas práticas e organização.
 
-Aqui você encontrará exercícios resolvidos, exemplos práticos, projetos pequenos e diversos arquivos organizados por tema, cobrindo tanto a base quanto tópicos que exigem um entendimento mais profundo da linguagem.
+Você encontrará aqui:
 
-✨ Conteúdo Abordado
+✅ Exercícios resolvidos
+✅ Exemplos práticos comentados
+✅ Projetos pequenos
+✅ Conteúdos separados por tema
+
+📚 Conteúdo Abordado
+🔹 Fundamentos da Linguagem
 Variáveis e tipos de dados
 
 Operadores
 
 Estruturas de controle (condicionais e loops)
 
-Funções (parâmetros, escopo, *args/**kwargs, funções anônimas com lambda)
+Listas, tuplas, dicionários e conjuntos
+
+🔹 Funções
+Definição e escopo
+
+Parâmetros e retorno
+
+*args e **kwargs
+
+Funções anônimas com lambda
 
 List Comprehensions e Dict Comprehensions
 
-Listas, tuplas, dicionários e conjuntos
+🔹 Manipulação de Arquivos
+Leitura e escrita de arquivos
 
-Manipulação de arquivos (leitura, escrita, contexto com with)
+Uso do gerenciador de contexto (with)
 
-Módulos e pacotes personalizados
+Trabalhando com arquivos .txt e outros formatos
 
-Programação Orientada a Objetos (POO):
+🔹 Módulos e Pacotes
+Organização em arquivos e diretórios
 
-Classes e instâncias
+Importação e reutilização de código
 
-Encapsulamento
+🔹 Programação Orientada a Objetos (POO)
+Criação de classes e instâncias
+
+Encapsulamento de atributos e métodos
 
 Herança e polimorfismo
 
 Classes abstratas e interfaces
 
-Mixins, MRO e boas práticas de projeto
-  
+Mixins, MRO (Method Resolution Order) e boas práticas
 
 🚀 Objetivo
-Construir uma base sólida e aprofundada em Python, visando:
+Aprender a linguagem Python de forma sólida, estruturada e prática — criando uma base forte para desenvolver projetos e seguir em direção a áreas como:
 
-Desenvolvimento de aplicações robustas
+Análise e ciência de dados
 
-Preparação para áreas como automação, análise de dados e desenvolvimento web
+Automação de tarefas
 
-Consolidação da lógica de programação e boas práticas
-🚀 Objetivo
-Aprender a linguagem Python de forma sólida e prática, construindo uma base forte para projetos futuros e aprofundamentos em áreas como análise de dados, ciências de dados, automação e desenvolvimento. 
+Desenvolvimento de aplicações
+
+
