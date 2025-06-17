@@ -18,68 +18,68 @@ Você encontrará aqui:
 
 🔹 Fundamentos da Linguagem
 
-Variáveis e tipos de dados
+-Variáveis e tipos de dados
 
 
-Operadores
+-Operadores
 
 
-Estruturas de controle (condicionais e loops)
+-Estruturas de controle (condicionais e loops)
 
 
-Listas, tuplas, dicionários e conjuntos
+-Listas, tuplas, dicionários e conjuntos
 
 
 🔹 Funções
 
-Definição e escopo
+-Definição e escopo
 
 
-Parâmetros e retorno
+-Parâmetros e retorno
 
 
-*args e **kwargs
+-(*args) e (**kwargs)
 
 
-Funções anônimas com lambda
+-Funções anônimas com lambda
 
 
 List Comprehensions e Dict Comprehensions
 
 🔹 Manipulação de Arquivos
 
-Leitura e escrita de arquivos
+-Leitura e escrita de arquivos
 
-Uso do gerenciador de contexto (with)
+-Uso do gerenciador de contexto (with)
 
-Trabalhando com arquivos .txt e outros formatos
+-Trabalhando com arquivos .txt e outros formatos
 
 🔹 Módulos e Pacotes
 
-Organização em arquivos e diretórios
+-Organização em arquivos e diretórios
 
-Importação e reutilização de código
+-Importação e reutilização de código
 
 🔹 Programação Orientada a Objetos (POO)
 
-Criação de classes e instâncias
+-Criação de classes e instâncias
 
-Encapsulamento de atributos e métodos
+-Encapsulamento de atributos e métodos
 
-Herança e polimorfismo
+-Herança e polimorfismo
 
-Classes abstratas e interfaces
+-Classes abstratas e interfaces
 
-Mixins, MRO (Method Resolution Order) e boas práticas
+-Mixins, MRO (Method Resolution Order) e boas práticas
 
 🚀 Objetivo
 
-Aprender a linguagem Python de forma sólida, estruturada e prática — criando uma base forte para desenvolver projetos e seguir em direção a áreas como:
+-Aprender a linguagem Python de forma sólida, estruturada e prática — criando uma base forte para desenvolver projetos e seguir em direção a áreas como:
 
-Análise e ciência de dados
+-Análise e ciência de dados
 
-Automação de tarefas
+-Automação de tarefas
 
-Desenvolvimento de aplicações
+-Desenvolvimento de aplicações
 
 
