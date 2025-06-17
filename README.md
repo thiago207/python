@@ -7,6 +7,7 @@ Este repositório registra minha jornada de aprendizado em Python, com foco não
 Você encontrará aqui:
 
 ✅ Exercícios resolvidos
+
 ✅ Exemplos práticos comentados
 ✅ Projetos pequenos
 ✅ Conteúdos separados por tema
