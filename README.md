@@ -1,5 +1,5 @@
-
-#🐍 Bem-vindo(a) ao Repositório de Estudos em Python de Thiago Felipe!
+#PYTHON
+🐍 Bem-vindo(a) ao Repositório de Estudos em Python de Thiago Felipe!
 📌 Repositório: thiago207/python
 
 Este repositório registra minha jornada de aprendizado em Python, com foco não apenas nos fundamentos, mas também em conteúdos intermediários e avançados, sempre priorizando código limpo, boas práticas e organização.
