@@ -1,4 +1,4 @@
-#PYTHON
+# python
 🐍 Bem-vindo(a) ao Repositório de Estudos em Python de Thiago Felipe!
 📌 Repositório: thiago207/python
 
